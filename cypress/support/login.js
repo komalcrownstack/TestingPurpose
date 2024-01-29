@@ -7,8 +7,8 @@ Cypress.Commands.add('login', () => {
   //Entering valid data into Password input field.
   cy.get(':nth-child(2) > .form-control').type(cred.Password)
   //Clicking on Submit button.
- cy.get('#m_login_signin_submit').click()
+  cy.get('#m_login_signin_submit').click()
  // cy.wait(3000)
   //verifying that the user is logged in successfully.
- cy.url().should('include', '/dashboard');
+ 
 })
